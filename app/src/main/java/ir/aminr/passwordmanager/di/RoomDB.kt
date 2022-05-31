@@ -7,6 +7,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
+import ir.aminr.passwordmanager.room.dao.PasswordDao
 import ir.aminr.passwordmanager.room.db.AppDatabase
 import javax.inject.Singleton
 
@@ -21,4 +22,10 @@ object RoomDB {
             context,
             AppDatabase::class.java,"PasswordDatabase"
         ).build()
+
+
+    @Provides
+    @Singleton
+    fun providePasswordDao(appDatabase: AppDatabase):PasswordDao =
+        appDatabase.passwordDao()
 }
