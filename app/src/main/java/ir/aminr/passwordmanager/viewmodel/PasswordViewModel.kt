@@ -75,7 +75,7 @@ class PasswordViewModel
         viewModelScope.launch{
             _insertPasswordState.value = InsertPasswordState.Loading
             try {
-                passwordRepository.deletePassword(password)
+                passwordRepository.insertPassword(password)
                 _insertPasswordState.value = InsertPasswordState.Success(password)
             }catch (e:Exception){
                 _insertPasswordState.value = InsertPasswordState.Error(e)
