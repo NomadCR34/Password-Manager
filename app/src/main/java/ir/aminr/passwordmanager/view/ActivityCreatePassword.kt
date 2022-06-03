@@ -75,7 +75,6 @@ fun AppBarCreateScreen(navController: NavController) {
                 Text(
                     text = stringResource(R.string.createPassword),
                     color = MaterialTheme.colors.secondary,
-                    modifier = Modifier.padding(start = 16.dp),
                 )
             }
 
