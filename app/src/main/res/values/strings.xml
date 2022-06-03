@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Password Manager</string>
+    <string name="Passwords">Passwords</string>
+    <string name="createPassword">Create Password</string>
 </resources>

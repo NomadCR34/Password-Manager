@@ -1,4 +1,4 @@
-package ir.aminr.passwordmanager.ui.theme
+package ir.aminr.passwordmanager.view.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes
